@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="left">
+        <div id="container" >
+
+        </div>
+    </div>
+    <div class="right">
+        <h1>ETCHY-SKETC<span>h</span>Y</h1>
+        <div class="settings">
+            <label id="labelSize" for="size"></label>
+            <input  id="size" type="range" max="100" min="1" value="16"/>
+            <label for="size"></label>
+            <button onclick="setSize()" id="setSize">Set </button>
+            <div class="color">
+                <input  type="color" id="color-wheel">   
+              </div>
+                 
+            <button
+            onclick="ActiveBtn(event)"
+            id="color-mode"
+            class="button">Color</button>
+            <button
+            onclick="ActiveBtn(event)"
+            id="rainbow-mode"
+            class="button">Rainbow</button>
+            <button
+            id="eraser-mode"
+            onclick="ActiveBtn(event)"
+            class="button">Eraser</button>
+            
+        </div>
+    </div>
+    <script src="index.js" ></script>
+</body>
+</html>
